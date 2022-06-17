@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Flexbox</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: black;
+            font-family: 'Lexend Deca', sans-serif;
+            font-size: 15px;
+        }
+
+        .flex-container {
+            padding: 80px 150px;
+            display: flex;
+            width: max-width;
+            align-items: center;
+            justify-content: center;
+            background-color: hsl(0, 0%, 95%);
+            align-content: space-between;
+            transform: scale(0.8);
+        }
+
+        .flex-container h1 {
+            font-family: 'Big Shoulders Display', cursive;
+            color: hsl(0, 0%, 95%);
+        }
+
+        .flex-container img {
+            padding-bottom: 10px;
+        }
+
+        .flex-item {
+            justify-content: space-between;
+            height: fit-content;
+            padding: 55px;
+        }
+
+        .flex-item p {
+            width: 100%;
+        }
+
+       .sedan {
+           background-color: hsl(31, 77%, 52%);
+           color: hsla(0, 0%, 100%, 0.75);
+       }
+
+       .suv {
+           background-color: hsl(184, 100%, 22%);
+           color: hsla(0, 0%, 100%, 0.75);
+       }
+
+       .luxury {
+           background-color: hsl(179, 100%, 13%);
+           color: hsla(0, 0%, 100%, 0.75);
+       }
+
+        button {
+            background-color: hsl(0, 0%, 95%);
+            border: none;
+            border-radius: 25px;
+            padding: 15px 32px;
+            margin-top: 65px;
+        }
+
+        .sedan button {
+            color: hsl(31, 77%, 52%);
+        }
+
+        .sedan button:hover {
+            background-color: hsl(31, 77%, 52%);
+            color: hsl(0, 0%, 95%);
+            border: 1.5px solid hsl(0, 0%, 95%);
+        }
+
+        .suv button {
+            color: hsl(184, 100%, 22%);
+        }
+
+        .suv button:hover {
+            background-color: hsl(184, 100%, 22%);
+            color: hsl(0, 0%, 95%);
+            border: 1.5px solid hsl(0, 0%, 95%);
+        }
+
+        .luxury button {
+            color: hsl(179, 100%, 13%);
+        }
+
+        .luxury button:hover {
+            background-color: hsl(179, 100%, 13%);
+            color: hsl(0, 0%, 95%);
+            border: 1.5px solid hsl(0, 0%, 95%);
+        }
+
+        @media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+    transform: scale(0.3);
+  }
+}
+
+        
+    </style>
+</head>
+<body>
+       <div class="flex-container">
+        <div class="sedan flex-item">
+            <div>
+                <img src="icon-sedans.svg" alt="">
+            </div>
+            <h1>SEDANS</h1>
+            <p>Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city or your next road trip</p>
+            <button>Learn More</button>
+        </div>
+        <div class="suv flex-item">
+            <div>
+                <img src="icon-suvs.svg" alt="">
+            </div>
+            <h1>SUVS</h1>
+            <p>Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city or your next road trip</p>
+            <button>Learn More</button>
+        </div>
+        <div class="luxury flex-item">
+            <div>
+                <img src="icon-luxury.svg" alt="">
+            </div>
+            <h1>LUXURY</h1>
+            <p>Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city or your next road trip</p>
+            <button>Learn More</button>
+        </div>
+    </div>
+</body>
+</html>
